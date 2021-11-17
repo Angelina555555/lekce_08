@@ -1,39 +1,49 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-*, :after, :before { box-sizing: border-box; }
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
 
 body {
-	padding: 50px;
+  padding: 50px;
 }
-
 
 .delitko {
-	margin: 50px 0;
+  margin: 50px 0;
 }
-
-
 
 .tlacitko {
-	display: inline-block;
-	padding: 20px 30px;
-	font-size: 24px;
-	line-height: 1;
-	background-color: #e74c3c;
-	color: white;
-	border-radius: 5px;
-	text-decoration: none;
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 24px;
+  line-height: 1;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
 }
 
-
+.tlacitko:hover,
+.ctverecek:hover {
+  background-color: #30cadf;
+}
 .ctverecek {
-	width: 250px;
-	height: 250px;
-	background-color: #2ecc71;
+  width: 250px;
+  height: 250px;
+  background-color: #2ecc71;
+  transition: background-color 1s ease-in 2s;
 }
-
 
 .kolecko {
-	width: 250px;
-	height: 250px;
-	border-radius: 50%;
-	background-color: #3498db;;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #3498db;
+  transition: background-color 2s linear, transform 10s ease-out,
+    border-radius 15s ease-in-out;
+}
+.kolecko:hover {
+  transform: scale(0.6);
+  background-color: #f78dc7;
 }
